@@ -12,6 +12,7 @@ Author: Till Herpertz
 h1, h2, h3, h4, h5, h6{
     font-family: 'Playfair Display', serif;
     font-weight: bold;
+    font-style: italic;
     color: #5e5e5e;
 }
 h1{
@@ -29,6 +30,7 @@ a, p{
     font-weight: 300;
     margin: 0;
     font-size: 18px;
+    font-style: italic;
 }
 
 /* Navigation */
@@ -165,6 +167,7 @@ a, p{
 .accordion-button:not(.collapsed){
     background-color: #aaa6b5;
     color: white;
+    box-shadow: none;
 }
 .accordion-button::after{
     color: white;
