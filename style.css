@@ -1,0 +1,306 @@
+/*
+Theme Name: Eva Bogdan Lash And Beauty
+Theme URI:
+Description: Theme for Eva Bogdan Beauty Salon
+Version:1.0
+Author: Till Herpertz
+*/
+
+/* General Stylings / Mobile Portrait */
+
+/* Font Stylings */
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #5e5e5e;
+}
+h1{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+a, p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    font-size: 18px;
+}
+
+/* Navigation */
+.navbar-light .navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none; /* Removes Shadow from clicked button */
+}
+.offcanvas-start {
+    width: 80%; /* Offcanvas navigation above 80% width of the content */
+}
+.offcanvas-header{
+    justify-content: end; /* Positions Close Button to the right */
+}
+.container-fluid.is-absolute{
+    position: absolute;
+}
+.navbar-logo-wrapper{
+    margin: 0 auto;
+    width: 60%;
+}
+.nav-spacer{
+    width: 90%;
+    border:none;
+    margin: 10px auto;
+}
+
+/* CONTENT */
+
+.wrapper h1,h2,h3,h4,h5,h6,p{
+    text-align: center;
+}
+.intro-wrap{
+    margin: 0 5px;
+    text-align: center;
+}
+.intro-wrap .carousel{
+    width: 90%;
+    margin: 30px auto;
+}
+.quote{
+    color: #486f96;
+    font-size: 14px;
+}
+.quote p{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.quote hr{
+    color: #6a87a6;
+    width: 20%;
+    margin: 20px auto;
+}
+.intro-text{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Services */
+.services-wrap{
+    background-color: #aaa6b5;
+    -webkit-transform: skewY(-4deg);
+    -moz-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+    -o-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    -webkit-box-shadow: inset 0px 13px 10px -7px rgb(0 0 0 / 12%);
+    box-shadow: inset 0px 13px 10px -7px rgb(0 0 0 / 12%)
+}
+.services-wrap h1{
+    transform: skewY(4deg);
+    padding-top: 30px;
+    color: white;
+}
+.services-wrap h2,
+.services-wrap h3,
+.services-wrap h4,
+.services-wrap h5,
+.services-wrap h6,
+.services-wrap p{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 200;
+    color: white;
+}
+.services-wrap h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+.services-wrap .accordion{
+    transform: skewY(4deg);
+}
+.services-wrap:after{
+    content: '';
+    background-color: #aaa6b5;
+    display: block;
+    width: 100%;
+    height: 17px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    transform: skewY(4deg);
+}
+.service-fill{
+    background-color: #aaa6b5;
+    height: 40px;
+    position: relative;
+    bottom: 2px;
+}
+
+/* Accordion Stylings */
+.accordion{
+    padding: 20px 0;
+}
+.accordion .accordion-hr{
+    width: 33%;
+    border: none;
+    color: white;
+    margin: 0 auto;
+}
+.accordion-button{
+    background-color: #aaa6b5;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 200;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.accordion-button:not(.collapsed){
+    background-color: #aaa6b5;
+    color: white;
+}
+.accordion-button::after{
+    color: white;
+    position: absolute;
+    right: 25px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.accordion-item{
+    border: none;
+    background-color: #aaa6b5;
+    margin-bottom: 50px;
+}
+.accordion-item:before{
+    content: '';
+    width: 33%;
+    margin: 0 auto;
+    display: block;
+    height: 1px;
+    background: white;
+}
+.accordion-item:after{
+    content: '';
+    width: 33%;
+    margin: 0 auto;
+    display: block;
+    height: 1px;
+    background: white;
+}
+.accordion-button:focus{
+    border: none;
+    box-shadow: none;
+}
+/* Opening Times */
+
+.opening-wrap{
+    width: 75%;
+    margin: 0 auto;
+}
+.opening-wrap p{
+    font-size: 24px;
+}
+.opening-list-item-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.time-is-closed{
+    opacity: 0.6;
+}
+
+/* Maps Styling */
+.google-maps-wrap{
+    width: 100%;
+    height: 240px;
+}
+.map-wrap p{
+    margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 30px auto;
+}
+.social-wrap .icon{
+    width: 35px;
+    height: 35px;
+    color: #1a1a1a;
+}
+
+/* Footer Links */
+.footer-wrap{
+    background-color: #e7e7e7;
+    height: 200px;
+    -webkit-transform: skewY(-4deg);
+    -moz-transform: skewY(-4deg);
+    -ms-transform: skewY(-4deg);
+    -o-transform: skewY(-4deg);
+    transform: skewY(-4deg);
+    -webkit-box-shadow: inset 0px 13px 10px -7px rgb(0 0 0 / 12%);
+    box-shadow: inset 0px 13px 10px -7px rgb(0 0 0 / 12%)
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    transform: skewY(4deg);
+}
+.footer-links:after{
+    content: '';
+    background-color: #e7e7e7;
+    display: block;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    transform: rotate(0);
+}
+.footer-links a{
+    color: #5e5e5e;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.footer-fill{
+    background-color: #e7e7e7;
+    height: 40px;
+}
+
+/* Mobile Landscape */
+@media (min-width: 576px) {
+}
+/* Tablet Portrait */
+@media (min-width: 768px) {
+
+}
+/* Tablet Landscape */
+@media (min-width: 992px) {
+
+}
+/* Desktop */
+@media (min-width: 1200px) {
+
+}
+/* Big Screen */
+@media (min-width: 1400px) {
+
+}
