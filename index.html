@@ -281,13 +281,55 @@
         jQuery("body").css('overflow','initial');
     });
 </script>
-<script>
-    $('.nav-link').click(function() {
-        var sectionTo = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(sectionTo).offset().top
-        }, 1500);
+<script type="text/javascript">
+    const accItem = jQuery(".accordion-item");
+    jQuery(".accordion-button.is-button-one").on("click", function (){
+        if($('.accordion-button.is-button-one').hasClass("collapsed")){
+            accItem.eq(1).show(100);
+            accItem.eq(2).show(100);
+            accItem.eq(3).show(100);
+        } else {
+            accItem.eq(1).hide(100);
+            accItem.eq(2).hide(100);
+            accItem.eq(3).hide(100);
+        }
     });
+    jQuery(".accordion-button.is-button-two").on("click", function (){
+        if($('.accordion-button.is-button-two').hasClass("collapsed")){
+            accItem.eq(0).show(100);
+            accItem.eq(2).show(100);
+            accItem.eq(3).show(100);;
+        } else {
+            accItem.eq(0).hide(100);
+            accItem.eq(2).hide(100);
+            accItem.eq(3).hide(100);
+        }
+    });
+    jQuery(".accordion-button.is-button-three").on("click", function (){
+        if($('.accordion-button.is-button-three').hasClass("collapsed")){
+            accItem.eq(0).show(100);
+            accItem.eq(1).show(100);
+            accItem.eq(3).show(100);
+        } else {
+            accItem.eq(0).hide(100);
+            accItem.eq(1).hide(100);
+            accItem.eq(3).hide(100);
+        }
+    });
+    jQuery(".accordion-button.is-button-four").on("click", function (){
+        if($('.accordion-button.is-button-four').hasClass("collapsed")){
+            accItem.eq(0).show(100);
+            accItem.eq(1).show(100);
+            accItem.eq(2).show(100);
+        } else {
+            accItem.eq(0).hide(100);
+            accItem.eq(1).hide(100);
+            accItem.eq(2).hide(100);
+        }
+    });
+</script>
+<script>
+    $(".op-cell .op-closed").parent().parent().addClass('time-is-closed');
 </script>
 </body>
 </html>

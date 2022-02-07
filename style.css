@@ -8,16 +8,12 @@ Author: Till Herpertz
 
 /* General Stylings / Mobile Portrait */
 
-html {
-    scroll-behavior: smooth;
-}
-
 /* Font Stylings */
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3{
     font-family: 'Playfair Display', serif;
     font-weight: bold;
-    font-style: italic;
     color: #5e5e5e;
+    font-style: italic;
 }
 h1{
     font-size: 35px;
@@ -27,6 +23,12 @@ h1{
 
 h2{
     font-size: 25px;
+}
+
+h4, h5, h6{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    font-size: 22px;
 }
 
 a, p{
@@ -65,8 +67,17 @@ a, p{
 
 /* CONTENT */
 
-.wrapper h1,h2,h3,h4,h5,h6,p{
+.wrapper h1,h2,h3,p{
     text-align: center;
+}
+.imprint-headline{
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+.imprint-text{
+    text-align: left;
+    padding-left: 20px;
 }
 .intro-wrap{
     margin: 0 5px;
@@ -224,6 +235,37 @@ a, p{
 .time-is-closed{
     opacity: 0.6;
 }
+.opening-wrap .op-table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.opening-wrap tbody{
+    width: 100%;
+}
+.opening-wrap .op-row{
+    display: flex;
+    justify-content: space-between;
+}
+.opening-wrap th{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    font-size: 18px;
+    font-style: italic;
+    font-size: 24px;
+}
+.opening-wrap td{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    font-size: 18px;
+    font-style: italic;
+    font-size: 24px;
+}
+span.op-closed{
+    color: #5e5e5e !important;
+}
 
 /* Maps Styling */
 .google-maps-wrap{
@@ -292,20 +334,122 @@ a, p{
     height: 40px;
 }
 
+/* Imprint */
+
+.impressum__imprint-container{
+    font-family: 'Source Sans Pro', serif;
+    color: #5e5e5e;
+    font-style: italic;
+    font-size: 25px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Datenschutz */
+.datenschutz-wrapper h1,
+.datenschutz-wrapper h2,
+.datenschutz-wrapper h3,
+.datenschutz-wrapper h4,
+.datenschutz-wrapper h5,
+.datenschutz-wrapper h6,
+.datenschutz-wrapper p,
+.datenschutz-wrapper a{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+}
+.datenschutz-wrapper{
+    max-width: 400px;
+    padding: 0 10px;
+}
+
 /* Mobile Landscape */
 @media (min-width: 576px) {
+    .offcanvas-start{
+        width: 40%;
+    }
+    .opening-wrap{
+        width: 55%
+    }
+    .services-wrap:after{
+        height: 35px;
+    }
+    .footer-fill{
+        height: 65px;
+    }
+    .datenschutz-wrapper{
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 /* Tablet Portrait */
 @media (min-width: 768px) {
-
+    .navbar-logo-wrapper{
+        width: 40%;
+    }
+    .opening-wrap{
+        width: 45%
+    }
+    .google-maps-wrap{
+        height: 380px;
+    }
+    .datenschutz-wrapper{
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
 /* Tablet Landscape */
 @media (min-width: 992px) {
-
+    .offcanvas-start{
+        width: 30%;
+    }
+    .services-wrap:after{
+        height: 45px;
+    }
+    .footer-links:after{
+        height: 60px;
+    }
+    .footer-fill{
+        height: 100px;
+    }
+    .datenschutz-wrapper{
+        max-width:1000px;
+        margin: 0 auto;
+    }
 }
 /* Desktop */
 @media (min-width: 1200px) {
-
+    .navbar-logo-wrapper{
+        width: 20%;
+    }
+    .nav-spacer{
+        width: 55%;
+    }
+    .container-fluid.is-absolute {
+        padding-left: 20%;
+    }
+    .intro-wrap .carousel{
+        width: 50%;
+    }
+    .accordion-button{
+        font-size: 20px;
+        width: 40%;
+        margin: 0 auto;
+    }
+    .services-wrap:after{
+        height: 65px;
+    }
+    .service-fill{
+        height: 60px;
+    }
+    .footer-wrap{
+        height: 225px;
+    }
+    .footer-links:after {
+        height: 75px;
+    }
+    .footer-fill {
+        height: 130px;
+    }
 }
 /* Big Screen */
 @media (min-width: 1400px) {
