@@ -39,6 +39,11 @@ a, p{
     font-style: italic;
 }
 
+.is-center{
+    text-align: center;
+    margin-top: 30px;
+}
+
 /* Navigation */
 .navbar-light .navbar-toggler{
     border: none;
@@ -104,6 +109,23 @@ a, p{
 .intro-text{
     width: 70%;
     margin: 0 auto;
+}
+.newin-hr{
+    width: 30%;
+    margin: 30px auto;
+}
+.intro-newin{
+    width: 75%;
+    margin: 0 auto
+}
+.intro-newin h2{
+}
+.intro-newin h3{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+.btn.btn-dark.is-info{
+    margin-top: 30px;
 }
 
 /* Services */
@@ -356,10 +378,11 @@ span.op-closed{
 .datenschutz-wrapper a{
     font-family: 'Source Sans Pro', sans-serif;
     text-align: left;
+    margin-top: 30Px;
 }
 .datenschutz-wrapper{
-    max-width: 400px;
-    padding: 0 10px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 /* Mobile Landscape */
@@ -377,7 +400,7 @@ span.op-closed{
         height: 65px;
     }
     .datenschutz-wrapper{
-        max-width: 600px;
+        max-width: 80%;
         margin: 0 auto;
     }
 }
@@ -393,7 +416,6 @@ span.op-closed{
         height: 380px;
     }
     .datenschutz-wrapper{
-        max-width: 800px;
         margin: 0 auto;
     }
 }
@@ -412,7 +434,6 @@ span.op-closed{
         height: 100px;
     }
     .datenschutz-wrapper{
-        max-width:1000px;
         margin: 0 auto;
     }
 }
